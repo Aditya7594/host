@@ -11,7 +11,7 @@
     <script>
         document.getElementById('triggerButton').addEventListener('click', async () => {
             try {
-                const response = await fetch("https://aditya7594.github.io/host/trigger", { // Fixed the quote here
+                const response = await fetch("/.netlify/functions/trigger", {
                     method: 'POST',
                 });
 
